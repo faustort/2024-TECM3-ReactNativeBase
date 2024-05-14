@@ -1,13 +1,12 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
 import Dashboard from "../screens/Dashboard";
 import Profile from "../screens/Profile";
 import Help from "../screens/Help";
 import Profit from "../screens/Profit";
-import speed from "@expo/vector-icons/MaterialCommunityIcons";
 import { AntDesign } from "@expo/vector-icons";
+import { NavigationContainer } from "@react-navigation/native";
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
