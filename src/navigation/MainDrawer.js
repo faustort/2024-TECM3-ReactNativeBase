@@ -7,6 +7,7 @@ import Help from "../screens/Help";
 import Profit from "../screens/Profit";
 import { AntDesign } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
+import Login from "../screens/Login";
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -37,6 +38,11 @@ const MainDrawer = () => {
                 },
               }}
             >
+              <Drawer.Screen
+                name="Login"
+                component={<Login />}
+                options={{ drawerIcon: <AntDesign name="login" size={24} /> }}
+              />
               <Drawer.Screen
                 name="Dashboard"
                 component={Dashboard}
